@@ -1,63 +1,73 @@
 <!doctype html>
-<html><head id="head"><base href="/">
-<meta charset="UTF-8">
-<title>userauth-web/forbidden</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="/dmxAppConnect/dmxMediumEditor/medium-editor.css" />
+<html>
 
-<script src="https://www.google.com/recaptcha/api.js" defer=""></script>
-<script src="/dmxAppConnect/dmxAppConnect.js"></script>
-<script src="/dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js"></script>
-<script src="/dmxAppConnect/dmxRouting/dmxRouting.js"></script>
-<script src="/js/jquery-3.5.1.slim.min.js" defer=""></script>
-<script src="/js/moment.js/2/moment.min.js" defer=""></script>
-<script src="/dmxAppConnect/dmxFormatter/dmxFormatter.js" defer=""></script>
-<script src="/dmxAppConnect/dmxBrowser/dmxBrowser.js" defer=""></script>
-<script src="/dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer=""></script>
-<script src="/dmxAppConnect/dmxCharts/Chart.min.js" defer=""></script>
-<script src="/dmxAppConnect/dmxCharts/dmxCharts.js" defer=""></script>
-<script src="/dmxAppConnect/dmxDatePicker/daterangepicker.min.js" defer=""></script>
-<script src="/dmxAppConnect/dmxDatePicker/dmxDatePicker.js" defer=""></script>
-<script src="/dmxAppConnect/dmxMediumEditor/medium-editor.js" defer=""></script>
-<script src="/dmxAppConnect/dmxDropzone/dmxDropzone.js" defer=""></script>
-<script src="/dmxAppConnect/dmxDownload/dmxDownload.js" defer=""></script>
-<script src="/dmxAppConnect/dmxScheduler/dmxScheduler.js" defer=""></script>
-<script src="/dmxAppConnect/dmxValidator/dmxValidator.js" defer=""></script>
-<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
-<script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
-<script src="/dmxAppConnect/dmxBootbox5/bootstrap-modbox.min.js" defer=""></script>
-<script src="/dmxAppConnect/dmxBootbox5/dmxBootbox5.js" defer=""></script>
-<script src="/dmxAppConnect/dmxNotifications/dmxNotifications.js" defer=""></script>
-<script src="/dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer=""></script>
-<script src="/socket.io/socket.io.js" defer=""></script>
-<script src="/dmxAppConnect/dmxSockets/dmxSockets.js" defer=""></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" integrity="anonymous" />
+<head id="head">
+    <base href="/userauth/">
+    <meta charset="UTF-8">
+    <title>userauth/forbidden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/dmxAppConnect/dmxMediumEditor/medium-editor.css" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="/dmxAppConnect/dmxAppConnect.js"></script>
+    <script src="/js/jquery-3.5.1.slim.min.js" defer=""></script>
+    <script src="/js/moment.js/2/moment.min.js" defer=""></script>
+    <script src="https://www.google.com/recaptcha/api.js" defer=""></script>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="/dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js" defer></script>
+    <script src="/dmxAppConnect/dmxRouting/dmxRouting.js" defer></script>
 
-<link rel="icon" href="/favicon.ico" />
 
-<link rel="stylesheet" href="/bootstrap/5/css/bootstrap.min.css" />
+    <script src="/dmxAppConnect/dmxFormatter/dmxFormatter.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxBrowser/dmxBrowser.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxCharts/Chart.min.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxCharts/dmxCharts.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxDatePicker/daterangepicker.min.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxDatePicker/dmxDatePicker.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxMediumEditor/medium-editor.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxDropzone/dmxDropzone.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxDownload/dmxDownload.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxScheduler/dmxScheduler.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxValidator/dmxValidator.js" defer=""></script>
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    <script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    <script src="/dmxAppConnect/dmxBootbox5/bootstrap-modbox.min.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxBootbox5/dmxBootbox5.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxNotifications/dmxNotifications.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxStateManagement/dmxStateManagement.js" defer=""></script>
+    <script src="/socket.io/socket.io.js" defer=""></script>
+    <script src="/dmxAppConnect/dmxSockets/dmxSockets.js" defer=""></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" integrity="anonymous" />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxAnimateCSS/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxDatePicker/daterangepicker.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxDatePicker/dmxDatePicker.css" />
+    <link rel="icon" href="/favicon.ico" />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxMediumEditor/dmxMediumEditor.css" />
+    <link rel="stylesheet" href="/bootstrap/5/css/bootstrap.min.css" />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxDropzone/dmxDropzone.css" />
+    <link rel="stylesheet" href="/dmxAppConnect/dmxAnimateCSS/animate.min.css" />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxValidator/dmxValidator.css" />
+    <link rel="stylesheet" href="/dmxAppConnect/dmxDatePicker/daterangepicker.min.css" />
 
-<link rel="stylesheet" href="/dmxAppConnect/dmxNotifications/dmxNotifications.css" />
+    <link rel="stylesheet" href="/dmxAppConnect/dmxDatePicker/dmxDatePicker.css" />
 
+    <link rel="stylesheet" href="/dmxAppConnect/dmxMediumEditor/dmxMediumEditor.css" />
+
+    <link rel="stylesheet" href="/dmxAppConnect/dmxDropzone/dmxDropzone.css" />
+
+    <link rel="stylesheet" href="/dmxAppConnect/dmxValidator/dmxValidator.css" />
+
+    <link rel="stylesheet" href="/dmxAppConnect/dmxNotifications/dmxNotifications.css" />
+
+    <script src="/dmxAppConnect/dmxMediumEditor/dmxMediumEditor.js" defer></script>
+    <link rel="stylesheet" href="/dmxAppConnect/dmxMediumEditor/themes/default.css" />
 </head>
-<body is="dmx-app"><div id="forbidden_div" is="dmx-view"><%- await include(content, locals); %>
-</div>
+
+<body is="dmx-app">
+    <div id="forbidden_div" is="dmx-view"><%- await include(content, locals); %>
+    </div>
 </body>
 
 </html>
