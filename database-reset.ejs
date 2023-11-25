@@ -1,71 +1,67 @@
 <!doctype html>
 <html>
+  
 <head id="head">
-<script src="/dmxAppConnect/dmxAppConnect.js"></script>
-<script defer="" src="/js/jquery-3.5.1.slim.min.js"></script>
-<script defer="" src="/js/moment.js/2/moment.min.js"></script>
-<base href="/">
-<meta charset="UTF-8">
-<title>userauth/database-reset</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Roboto:wght@500&family=Arial:wght@400&display=swap" rel="stylesheet" />
-
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" name="viewport">
-<link href="/dmxAppConnect/dmxMediumEditor/medium-editor.css" rel="stylesheet" />
-
-<script defer="" src="https://www.google.com/recaptcha/api.js"></script>
-<script defer="" src="/dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js"></script>
-<script defer="" src="/dmxAppConnect/dmxRouting/dmxRouting.js"></script>
-<script defer="" src="/dmxAppConnect/dmxFormatter/dmxFormatter.js"></script>
-<script defer="" src="/dmxAppConnect/dmxBrowser/dmxBrowser.js"></script>
-<script defer="" src="/dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js"></script>
-<script defer="" src="/dmxAppConnect/dmxCharts/Chart.min.js"></script>
-<script defer="" src="/dmxAppConnect/dmxCharts/dmxCharts.js"></script>
-<script defer="" src="/dmxAppConnect/dmxDatePicker/daterangepicker.min.js"></script>
-<script defer="" src="/dmxAppConnect/dmxDatePicker/dmxDatePicker.js"></script>
-<script defer="" src="/dmxAppConnect/dmxMediumEditor/medium-editor.js"></script>
-<script defer="" src="/dmxAppConnect/dmxDropzone/dmxDropzone.js"></script>
-<script defer="" src="/dmxAppConnect/dmxDownload/dmxDownload.js"></script>
-<script defer="" src="/dmxAppConnect/dmxScheduler/dmxScheduler.js"></script>
-<script defer="" src="/dmxAppConnect/dmxValidator/dmxValidator.js"></script>
-<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
-<script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
-<script defer="" src="/dmxAppConnect/dmxBootbox5/bootstrap-modbox.min.js"></script>
-<script defer="" src="/dmxAppConnect/dmxBootbox5/dmxBootbox5.js"></script>
-<script defer="" src="/dmxAppConnect/dmxNotifications/dmxNotifications.js"></script>
-<script defer="" src="/dmxAppConnect/dmxStateManagement/dmxStateManagement.js"></script>
-<script defer="" src="/socket.io/socket.io.js"></script>
-<script defer="" src="/dmxAppConnect/dmxSockets/dmxSockets.js"></script>
-<script defer="" src="/dmxAppConnect/dmxMediumEditor/dmxMediumEditor.js"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect" />
-
-<link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
-
-<link href="/favicon.ico" rel="icon" />
-
-<link href="/bootstrap/5/css/bootstrap.min.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxAnimateCSS/animate.min.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxDatePicker/daterangepicker.min.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxDatePicker/dmxDatePicker.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxMediumEditor/dmxMediumEditor.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxDropzone/dmxDropzone.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxValidator/dmxValidator.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxNotifications/dmxNotifications.css" rel="stylesheet" />
-
-<link href="/dmxAppConnect/dmxMediumEditor/themes/default.css" rel="stylesheet" />
-
-</head>
-
+    <script src="/dmxAppConnect/dmxAppConnect.js">
+    </script>
+    <script defer="" src="/js/jquery-3.5.1.min.js">
+    </script>
+    <script defer="" src="/js/moment.js/2/moment.min.js">
+    </script>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <title>
+      userauth/database-reset
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&amp;family=Roboto:wght@500&amp;family=Arial:wght@400&amp;display=swap" rel="stylesheet" />
+    <script defer="" src="/dmxAppConnect/dmxBootstrap5Modal/dmxBootstrap5Modal.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxRouting/dmxRouting.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxFormatter/dmxFormatter.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxValidator/dmxValidator.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxNotifications/dmxNotifications.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxBrowser/dmxBrowser.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxStateManagement/dmxStateManagement.js">
+    </script>
+    <script defer="" src="https://www.google.com/recaptcha/api.js">
+    </script>
+    <script src="/bootstrap/5/js/bootstrap.bundle.min.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxBootbox5/bootstrap-modbox.min.js">
+    </script>
+    <script defer="" src="/dmxAppConnect/dmxBootbox5/dmxBootbox5.js">
+    </script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/bootstrap/5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/dmxAppConnect/dmxAnimateCSS/animate.min.css" rel="stylesheet" />
+    <link href="/dmxAppConnect/dmxValidator/dmxValidator.css" rel="stylesheet" />
+    <link href="/dmxAppConnect/dmxNotifications/dmxNotifications.css" rel="stylesheet" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, maximum-scale=1.0" name="viewport" />
+    <!--<% if($_ENV.GOOGLE_ANALYTICS_ID) { %> -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=<%=_('$_ENV.GOOGLE_ANALYTICS_ID',locals)%>">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "<%=_('$_ENV.GOOGLE_ANALYTICS_ID',locals)%>");
+    </script>
+    <!--<% } %> -->
+  </head>
+  
 <body is="dmx-app">
-<div id="database-reset_div" is="dmx-view">
-<%- await include(content, locals); %>
-</div>
-</body>
+    <div id="database-reset_div" is="dmx-view">
+      <%- await include(content, locals); %>
+    </div>
+  </body>
 
 </html>
